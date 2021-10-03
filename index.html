@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <button class="aside-btn" onclick="sidebar_open()">&#9776;</button>
+     <aside id="aside">
+          <button onclick="sidebar_close()" class="aside_close">&times;</button>
+          <div class="aside-top">
+               <div class="aside-top_logo"><img src="img/Logo@3x.svg" alt="" ></div>
+               <h3>PROJECTUS</h3>
+               <div class="aside-top_search"><a href="#"><img src="img/Search@3x.svg" alt="" class=""></a></div>
+          </div>
+          <div class="aside-user">
+               <div class="aside-user_logo"><img src="img/user.png" alt=""></div>
+               <p>Jean Gonzales <br><span>Product owner</span>
+               </p>
+               <div class="aside-user_more"><a href="#"><img src="img/dots2.png" alt=""></a></div>
+          </div>
+          <div class="aside-menu">
+               <div class="aside-menu_tasks">
+                    <h4 class="completed_tasks">372<br><span>Completed Tasks</span></h4>
+                    <h4 class="open_tasks">11<br><span>Open Tasks</span></h4>
+               </div>
+               <div class="aside-menu_list">
+                    <h6>MENU</h6>
+                    <ul >
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">My Tasks</a></li>
+                         <li class="list_notifications"><a href="#">Notifications</a></li>
+                    </ul>
+               </div>
+          </div>
+     </aside>
+     <header>
+          <div class="header-top">
+               <div class="header-top_left">
+                    <div class="header-top_img1"><img src="/img/Shapes@2x.png" alt=""></div>
+                    <h2>Website Redesign</h2>
+                    <div class="header-top_img2"><a href="#"><img src="img/dots_circle.png" alt=""></a></div>
+               </div>
+               <div class="header-top_right">
+                    <div class="header-top_right_avat">
+                         <img src="img/icon_av.png" alt="">
+                         <img src="img/icon_bg.png" alt="">
+                         <img src="img/icon_br.png" alt="">
+                    </div>
+                    <div class="header-top_right_buttons">
+                         <button class="header-top_right_button1" href="#">Share</button>
+                         <button class="header-top_right_button2"><img src="img/Combined Shape@1x.svg" alt=""> <span>Chat</span></button>
+                    </div>
+               </div>
+          </div>
+          <div class="tab">
+                    <button id="Tasks-tab" class="tablinks" onclick="openTabs(event, 'Tasks')">Tasks</button>
+                    <button id="Kanban-tab" class="tablinks" onclick="openTabs(event, 'Kanban')">Kanban</button>
+                    <button id="Activity-tab" class="tablinks" onclick="openTabs(event, 'Activity')">Activity</button>
+                    <button id="Calendar-tab" class="tablinks" onclick="openTabs(event, 'Calendar')">Calendar</button>
+                    <button id="Files-tab" class="tablinks" onclick="openTabs(event, 'Files')">Files</button>
+          </div>
+     </header>
+     <main>
+          <div id="Tasks" class="tabcontent">
+               <h3>TODAY</h3>
+               <p>Empty_1</p>
+             </div>
+             
+             <div id="Kanban" class="tabcontent">
+               <h3>TODAY</h3>
+               <p>Empty_2</p>
+             </div>
+             
+             <div id="Activity" class="tabcontent">
+               <h3>TODAY</h3>
+               <div class="message1">
+                    <img src="img/printer.png" alt="">
+                    <p>Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users</p>
+                    <span>8:40 PM</span>
+               </div>
+               <div class="message1">
+                    <img src="img/polaroid-camera.png" alt="">
+                    <p>Emilee Simchenko commented on Account for teams and personal in bottom style</p>
+                    <span>7:32 PM</span>
+               </div>
+               <div class="message3">
+                    <p>During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes</p>
+               </div>
+               <div class="message1">
+                    <img src="img/spray-paint.png" alt="">
+                    <p>Darika Samak uploaded 4 files on An option to search in current projects or in all projects</p>
+                    <span>6:02 PM</span>
+               </div>
+               <div class="message4">
+                    <img src="img/message_1.jpg" alt="">
+                    <img src="img/message_2.jpg" alt="">
+                    <img src="img/message_3.jpg" alt="">
+                    <img src="img/message_4.jpg" alt="">
+               </div>
+             </div>
+             <div id="Calendar" class="tabcontent">
+               <h3>TODAY</h3>
+               <p>Empty_3</p>
+             </div>
+             <div id="Files" class="tabcontent">
+               <h3>TODAY</h3>
+               <p>Empty_4</p>
+             </div>
+     </main>
+     <script src="script.js"></script>
+</body>
+</html>
