@@ -13,7 +13,6 @@ function openTabs(evt, tabsName) {
      
    }
    
-
    document.getElementById("Activity-tab").click();
    
    function sidebar_open() {
