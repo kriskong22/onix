@@ -54,19 +54,41 @@ aside{
           height: 84px;
           padding: 30px 20px 30px 30px;
           flex-wrap: wrap;
-          .aside-top_logo{
-               flex: 0 1 auto;
+          position: relative;
+          &::before{
+               content: "";
+               position: absolute;
+               width: 50px;
+               height: 50px;
+               background-image: url('img/Logo@3x.svg');
+               background-repeat: no-repeat;
+               margin-right: 0px;
+               background-position-y: center;
           }
+          &::after{
+               content: "";
+               position: absolute;
+               right: -10px;
+               width: 50px;
+               height: 50px;
+               background-image: url('img/Search@3x.svg');
+               background-repeat: no-repeat;
+               margin-right: 0px;
+               background-position-y: center;
+          }
+//          .aside-top_logo{
+//               flex: 0 1 auto;
+//          }
           h3{
                flex: 0 1 auto;
                font-weight: normal;
                font-size: 16px;
-               margin-left: 13px;
+               margin-left: 40px;
           }
-          .aside-top_search{
-               margin-left: auto;
-               flex: 0 1 auto;
-          }
+//          .aside-top_search{
+//               margin-left: auto;
+//               flex: 0 1 auto;
+//          }
      }
      .aside-user{
           width: 100%;
@@ -76,6 +98,16 @@ aside{
           display: flex;
           justify-content: space-between;
           align-items: center;
+          &::after{
+               content: "";
+               width: 30px;
+               height: 30px;
+               background-image: url('img/dots2.png');
+               background-repeat: no-repeat;
+               margin-right: 0px;
+               background-position-y: center;
+               background-position-x: right;
+          }
           .aside-user_logo img{
                width: 48px;
                height: 48px;
@@ -126,18 +158,20 @@ aside{
                     }
                     .list_notifications ::after{
                          content: '';
-                         background:yellow;
+                         background-color:yellow;
                          display:inline-block;
-                         width: 15px;
-                         height: 15px;
+                         position: relative;
+                         top:3px;
+                         width: 16px;
+                         height: 16px;
                          border-radius: 50%;
                          margin-left: 5px;
                     }
                }
           }
      }
-
-     }
+}
+     
 
 header{
      width: 78vw;
@@ -156,21 +190,37 @@ header{
                display: flex;
                justify-content: start;
                align-items: center;
-               .header-top_img1 img {
+               &::before{
+                    content: "";
                     width: 40px;
                     height: 40px;
+                    background-image: url('img/shapes.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
                }
+               &::after{
+                    content: "";
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('img/dots_circle.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+               }
+//               .header-top_img1 img {
+//                    width: 40px;
+//                    height: 40px;
+//               }
                h2{
                     font-size: 35px;
                     margin: 0 10px;
                }
-               .header-top_img2 img{
-                    width: 50px;
-                    height: 50px;
-                    position: relative;
-                    top:5px;
-                    object-fit: cover;
-               }
+//               .header-top_img2 img{
+//                    width: 50px;
+//                    height: 50px;
+//                    position: relative;
+//                    top:5px;
+//                    object-fit: cover;
+//               }
           }
           .header-top_right{
                display: flex;
@@ -264,14 +314,28 @@ main{
                     font-size: 14px;
                     align-items: center;
                     margin-bottom: 30px;
-                    img{
-                         flex: 0 0 40px;
+                    position: relative;
+                    &::before{
+                         content: "";
+                         width: 40px;
+                         height: 40px;
+                         color: transparent;
                          border-radius: 50%;
-                         
+                         background-image: url('img/printer.png');
+                         background-size: cover;
+                         background-repeat: no-repeat;
+                         display: block;
+                         position: absolute;
                     }
+//                    img{
+//                         flex: 0 0 40px;
+//                         border-radius: 50%;
+//                         
+//                    }
                     p{
-                         margin: 0 80px 0 20px;
+                         margin: 0 60px 0 70px;
                          line-height: 20px;
+                         display: flex;
                     }
                     span{
                          opacity: 70%;
@@ -387,7 +451,7 @@ main{
                margin: 15px ;
                padding: 10px;
                .message1 p{
-                    margin: 0px 20px 0 15px;
+                    margin: 0px 20px 0 60px;
                }
                .message1 span{
                     flex-basis: 230px;
