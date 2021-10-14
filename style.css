@@ -159,7 +159,7 @@ header {
         content: "";
         width: 40px;
         height: 40px;
-        background-image: url("img/shapes.png");
+        background-image: url("img/Shapes.png");
         background-repeat: no-repeat;
         background-size: contain; }
       header .header-top .header-top_left::after {
