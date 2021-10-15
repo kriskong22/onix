@@ -234,7 +234,8 @@ main {
   width: 78vw;
   height: calc(100vh - 140px);
   background-color: #EEEBE5;
-  margin-left: 22vw; }
+  margin-left: 22vw;
+  overflow-y: auto; }
   main .tabcontent {
     max-width: 730px;
     margin: 0 auto;
@@ -249,7 +250,7 @@ main {
       margin-bottom: 30px; }
     main .tabcontent .message1 {
       display: flex;
-      font-size: 14px;
+      font-size: 16px;
       align-items: center;
       margin-bottom: 30px;
       position: relative; }

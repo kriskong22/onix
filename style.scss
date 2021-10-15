@@ -296,6 +296,7 @@ main{
      height: calc(100vh - 140px);
      background-color:#EEEBE5;
      margin-left: 22vw;
+     overflow-y: auto;
           .tabcontent{
                max-width:730px;
                margin: 0 auto;
@@ -311,7 +312,7 @@ main{
                }
                .message1{
                     display: flex;
-                    font-size: 14px;
+                    font-size: 16px;
                     align-items: center;
                     margin-bottom: 30px;
                     position: relative;
@@ -413,6 +414,7 @@ main{
      }
 }
 @media screen and (max-width:750px){
+
      aside{
           width:100vw;
      }
