@@ -107,10 +107,10 @@ aside {
       justify-content: space-between; }
       aside .aside-menu .aside-menu_tasks h4 {
         font-size: 20px; }
-        aside .aside-menu .aside-menu_tasks h4 span {
+        aside .aside-menu .aside-menu_tasks h4 #completed_tasks2, aside .aside-menu .aside-menu_tasks h4 #open_tasks2 {
           font-size: 12px;
           opacity: 0.5; }
-    aside .aside-menu .aside-menu_tasks .completed_tasks, aside .aside-menu .aside-menu_tasks .open_tasks {
+    aside .aside-menu .aside-menu_tasks #completed_tasks, aside .aside-menu .aside-menu_tasks #open_tasks {
       width: 50%; }
     aside .aside-menu .aside-menu_list {
       padding: 30px 0px 0px 0px;
@@ -127,18 +127,18 @@ aside {
         aside .aside-menu .aside-menu_list ul a {
           text-decoration: none;
           color: inherit; }
-        aside .aside-menu .aside-menu_list ul .list_notifications::after {
-          content: '3';
-          background-color: #FFC200;
-          color: #131313;
-          text-align: center;
-          vertical-align: middle;
-          display: inline-block;
-          line-height: 20px;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          margin-left: 5px; }
+          aside .aside-menu .aside-menu_list ul a span {
+            display: inline-block;
+            margin-left: 5px;
+            background-color: #FFC200;
+            color: #131313;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            line-height: 20px;
+            text-align: center;
+            position: relative;
+            top: 5px; }
 
 header {
   width: calc(100vw - 270px);
